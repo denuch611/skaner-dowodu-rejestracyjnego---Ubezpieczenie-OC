@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <StartupObject>aztecapka1.Program</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Chromium.ChromeDriver" Version="2.37.0" />
+    <PackageReference Include="Gettext.Tools" Version="0.21.0.1" />
+    <PackageReference Include="PolishVehicleRegistrationCertificateDecoder" Version="1.0.5" />
+    <PackageReference Include="Selenium.Support" Version="4.0.1" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.0.1" />
+    <PackageReference Include="Selenium.WebDriver.ChromeDriver" Version="102.0.5005.6102" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.8.3" />
+    <PackageReference Include="WebDriver.ChromeDriver" Version="26.14.313457.1" />
+  </ItemGroup>
+
+</Project>
