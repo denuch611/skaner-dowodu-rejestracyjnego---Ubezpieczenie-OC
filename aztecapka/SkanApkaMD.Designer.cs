@@ -1,5 +1,5 @@
 ﻿
-namespace aztecapka1
+namespace HistoriaPojazdu
 {
     partial class SkanApkaMD
     {
@@ -51,7 +51,12 @@ namespace aztecapka1
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox8 = new System.Windows.Forms.TextBox();
-            this.button4 = new System.Windows.Forms.Button();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.textBox11 = new System.Windows.Forms.TextBox();
+            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.textBox9 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -260,15 +265,59 @@ namespace aztecapka1
             this.textBox8.Size = new System.Drawing.Size(149, 22);
             this.textBox8.TabIndex = 40;
             // 
-            // button4
+            // label13
             // 
-            this.button4.Location = new System.Drawing.Point(441, 316);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(75, 23);
-            this.button4.TabIndex = 41;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label13.Location = new System.Drawing.Point(202, 370);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(40, 19);
+            this.label13.TabIndex = 53;
+            this.label13.Text = "Data";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label12.Location = new System.Drawing.Point(26, 370);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(139, 19);
+            this.label12.TabIndex = 52;
+            this.label12.Text = "Badanie Techniczne";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label8.Location = new System.Drawing.Point(400, 292);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(130, 19);
+            this.label8.TabIndex = 51;
+            this.label8.Text = "Ubezpieczenie OC";
+            // 
+            // textBox11
+            // 
+            this.textBox11.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox11.Location = new System.Drawing.Point(201, 392);
+            this.textBox11.Name = "textBox11";
+            this.textBox11.Size = new System.Drawing.Size(149, 22);
+            this.textBox11.TabIndex = 50;
+            // 
+            // textBox10
+            // 
+            this.textBox10.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox10.Location = new System.Drawing.Point(26, 392);
+            this.textBox10.Name = "textBox10";
+            this.textBox10.Size = new System.Drawing.Size(149, 22);
+            this.textBox10.TabIndex = 49;
+            // 
+            // textBox9
+            // 
+            this.textBox9.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBox9.Location = new System.Drawing.Point(400, 313);
+            this.textBox9.Name = "textBox9";
+            this.textBox9.Size = new System.Drawing.Size(149, 22);
+            this.textBox9.TabIndex = 48;
             // 
             // SkanApkaMD
             // 
@@ -276,7 +325,12 @@ namespace aztecapka1
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.GhostWhite;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button4);
+            this.Controls.Add(this.label13);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.label8);
+            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.textBox10);
+            this.Controls.Add(this.textBox9);
             this.Controls.Add(this.textBox8);
             this.Controls.Add(this.textBox7);
             this.Controls.Add(this.textBox6);
@@ -331,7 +385,12 @@ namespace aztecapka1
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.TextBox textBox8;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.TextBox textBox11;
+        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox textBox9;
     }
 }
 

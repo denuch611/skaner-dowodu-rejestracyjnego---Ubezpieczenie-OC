@@ -24,7 +24,7 @@ using OpenQA.Selenium.Safari;
 using System.Web;
 using System.Globalization;
 
-namespace aztecapka1
+namespace HistoriaPojazdu
 {
     public partial class SkanApkaMD : Form
     {
@@ -147,22 +147,25 @@ namespace aztecapka1
                 Console.WriteLine(title.Text);
 
             var oc = driver.FindElement(By.ClassName("oc")).GetAttribute("innerText");
-            Console.WriteLine(oc);
+            //   Console.WriteLine(oc);
+            textBox9.AppendText(oc);
 
             var badanieTech = driver.FindElement(By.ClassName("tech")).GetAttribute("innerText");
-            Console.WriteLine(badanieTech);
+            textBox10.AppendText(badanieTech);
+            //   Console.WriteLine(badanieTech);
 
 
             var osczasu = driver.FindElement(By.Id("raport-content-template-timeline-button"));
 
             osczasu.Click();
 
-            var test1 = driver.FindElement(By.ClassName("summary-box")).GetAttribute("innerText");
-            Console.WriteLine(test1);
+            //   var test1 = driver.FindElement(By.ClassName("summary-box")).GetAttribute("innerText");
+            //  Console.WriteLine(test1);
 
 
             var test2 = driver.FindElement(By.XPath("//p[contains(text(), 'Polisa OC: ')]/span")).GetAttribute("innerText");
-            Console.WriteLine(test2);
+            textBox11.AppendText(test2);
+            //  Console.WriteLine(test2);
 
             //div[text()='Ingredients:']/following-sibling::div/span[contains(@class,'cancel-icon')]
 
@@ -196,23 +199,23 @@ namespace aztecapka1
         {
         }
 
-        private void button4_Click(object sender, EventArgs e)
-        {
-            SqlConnection conn = new SqlConnection(@"Data Source=NOTEBOOK-MD\MSSQLSERVER;Initial Catalog=test;Integrated Security=True;");
-            conn.Open();
-            SqlCommand cmd = new SqlCommand("insert into test100(nameid, id, imie) values('" + 1 + "','" + 1 + "','" + textBox1.Text + "')", conn);
-            int i = cmd.ExecuteNonQuery();
-
-            if (i != 0)
-            {
-                MessageBox.Show("poszlo");
-
-            }
-            else
-            {
-                MessageBox.Show("lipa");
-            }
-        }
+  //      private void button4_Click(object sender, EventArgs e)
+  //     {
+  //         SqlConnection conn = new SqlConnection(@"Data Source=NOTEBOOK-MD\MSSQLSERVER;Initial Catalog=test;Integrated Security=True;");
+  //         conn.Open();
+  //         SqlCommand cmd = new SqlCommand("insert into test100(nameid, id, imie) values('" + 1 + "','" + 1 + "','" + textBox1.Text + "')", conn);
+  //         int i = cmd.ExecuteNonQuery();
+  //
+  //         if (i != 0)
+  //         {
+  //             MessageBox.Show("poszlo");
+  //
+  //         }
+  //         else
+  //         {
+  //             MessageBox.Show("lipa");
+  //         }
+  //     }
     }
 
 }
